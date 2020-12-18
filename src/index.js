@@ -4,6 +4,11 @@ import './index.css';
 
 
 class Square extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { value: null, };
+  }
+
   render() {
     return (
       <button className="square" onClick={() => alert("clicked")}>
